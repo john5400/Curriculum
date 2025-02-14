@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Flover Quintero Jaramillo - Portfolio</title>
+  <meta name="description" content="Software engineer, Frontend Developer, React JS Developer portfolio">
+  <meta property="og:title" content="John Quintero - Portfolio">
+  <meta property="og:description" content="Software engineer, Frontend Developer, React JS Developer portfolio">
+  <meta property="og:url" content="https://curriculum-jcnm.vercel.app/">
+  <meta property="og:image" content="https://curriculum-jcnm.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.33fe3f39.jpg&amp;w=3840&amp;q=75">
+  <meta property="og:image:width" content="466">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="John Quintero">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="John Quintero - Portfolio">
+  <meta name="twitter:description" content="Software engineer, Frontend Developer, React JS Developer portfolio">
+  <meta name="twitter:image" content="https://curriculum-jcnm.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.33fe3f39.jpg&amp;w=3840&amp;q=75">
+  <meta name="twitter:image:width" content="466">
+  <meta name="twitter:image:height" content="630">
+  <meta name="twitter:image:alt" content="John Quintero">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16">
+  <link rel="stylesheet" href="/_next/static/css/967b712e6ac7cc08.css">
+  <link rel="stylesheet" href="/_next/static/css/e218cd38df91965d.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Estilos mejorados */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    .button {
+      --😀: #644dff;
+      --😀😀: #4836bb;
+      --😀😀😀: #654dff63;
+      cursor: pointer;
+      width: 120px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      font-size: 1.125em;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #fff;
+      background: var(--😀);
+      border: 2px solid var(--😀😀);
+      border-radius: .75rem;
+      box-shadow: 0 8px 0 var(--😀😀);
+      transform: skew(-10deg);
+      transition: all .1s ease;
+      filter: drop-shadow(0 15px 20px var(--😀😀😀));
+    }
+
+    .button:active {
+      letter-spacing: 0px;
+      transform: skew(-10deg) translateY(8px);
+      box-shadow: 0 0 0 var(--😀😀😀);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo img {
+      width: 60px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    header .logo img:hover {
+      transform: scale(1.1);
+    }
+
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+      color: #ff416c;
+    }
+
+    header .btn {
+      background: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    header .btn:hover {
+      background: #ff416c;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: #fff;
+      padding: 150px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero .btn {
+      background: #ff416c;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .hero .btn:hover {
+      background: #e03a5f;
+      transform: translateY(-5px);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .services, .works, .experience, .skills, .contact {
+      padding: 80px 0;
+    }
+
+    .services h2, .works h2, .experience h2, .skills h2, .contact h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: #2c3e50;
+    }
+
+    .service-cards, .project-grid, .skill-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 80px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    a {
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff416c;
+    }
+
+    @media (max-width: 768px) {
+      header nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+
+      .service-cards, .project-grid, .skill-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="__className_d65c78">
+  <header class="Header_headerTopDark__c2Ol0">
+    <div class="container">
+      <a href="#summary" class="logo">
+        <img src="logooooo.jpeg" alt="Logo" width="200" height="200" style="transition: transform 0.8s ease;">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/573185190645" target="_blank">
+        <button class="button">Hire me</button>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="summary" class="hero">
+      <div class="container">
+        <h1>I am John</h1>
+        <h2>Software Tecnic & Frontend Developer</h2>
+        <p>Able to create, modify, fix, and test frontend functions, integrating APIs and ensuring high performance and a good user experience.</p>
+        <a href="https://onedrive.live.com/?cid=252D65480CE4CE2E&id=252D65480CE4CE2E%21sfa77105738bc4673a4a8c298a00cc77f&parId=252D65480CE4CE2E%21s17d302f625c04811a3207cdccae140f2&o=OneUp" download class="btn">Download CV</a>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/jhon-quintero-jaramillo-/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/john5400" target="_blank">GitHub</a>
+          <a href="https://wa.me/573185190645" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="service-cards">
+          <div class="card">
+            <h3>Web Development</h3>
+            <p>Provide quality solutions by creating or modifying complex visual components in a simple and user-friendly way, always applying good practices using ReactJs.</p>
+          </div>
+          <div class="card">
+            <h3>Fullstack Service</h3>
+            <p>Standardization, documentation, and APIs simplification of the main core components, design systems improving the components reusability using NodeJS, Express, and MongoDB.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="works">
+      <div class="container">
+        <h2>Recent Works</h2>
+        <div class="project-grid">
+          <div class="project">
+            <h3>Digibot</h3>
+            <p>100% responsive style framework that seeks to facilitate the development and implementation of components.</p>
+            <a href="https://john5400.github.io/Digibot/#servicios" target="_blank">
+              <button class="button">View Project</button>
+            </a>
+          </div>
+          <!-- Add more projects here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="event">
+            <h3>Frontend Developer</h3>
+            <p> (2022- Current)</p>
+          </div>
+          <!-- Add more experience events here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skill-list">
+          <div class="skill" style="display: flex; gap: 20px; align-items: center; justify-content: center;">
+            <div>
+              <img src="img_html.webp" alt="HTML" width="200" style="transition: transform 0.3s ease;">
+              <p>HTML</p>
+            </div>
+            <div>
+              <img src="css.webp" alt="CSS" width="210" style="transition: transform 0.3s ease;">
+              <p>CSS</p>
+            </div>
+            <div>
+              <img src="php.jpg" alt="PHP" width="210" style="transition: transform 0.3s ease;">
+              <p>PHP</p>
+            </div>
+            <div>
+              <img src="sql.jpg" alt="SQL" width="210" style="transition: transform 0.3s ease;">
+              <p>SQL</p>
+            </div>
+            <div>
+              <img src="java.jpg" alt="Java" width="210" style="transition: transform 0.3s ease;">
+              <p>Java</p>
+            </div>
+          </div>
+          <!-- Add more skills here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <section id="contact" class="contact">
+          <div class="container">
+            <h2>Contact</h2>
+            <div class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 bg-[#120717] p-10 rounded-lg shadow-lg">
+              <!-- Formulario Original -->
+              <div class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                  
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                
+                  
+                
+              
+              <!-- Formulario Adicional -->
+              <div class="contact-form-wrapper">
+                <form action="https://formspree.io/f/xovjwawl" method="POST" class="contact-form space-y-4">
+                  <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 bg-black text-white border border-gray-600 rounded-md">
+                  </div>
+                 
+                    <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 bg-black text-white border border-gray-600 rounded-md">
+                  </div>
+                  <input type="mensaje" name="mensaje" placeholder="Mensaje" required class="w-full p-3 bg-black text-white border border-gray-600 rounded-md">
+                  </div>
+                 
+                <button class="w-full bg-purple-600 hover:bg-purple-700 text-white p-3 rounded-md transition">Send</button>
+              </div>
+              <div class="space-y-6">
+                <div class="flex items-center space-x-4">
+                  <div class="bg-purple-600 p-3 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 10l1.5 2.5L9 9l4.5 4.5L21 6M3 21h18"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-gray-400">Phone</p>
+                    <p class="font-bold text-lg">+57 318 5190645</p>
+                  </div>
+                </div>
+    
+                <div class="flex items-center space-x-4">
+                  <div class="bg-purple-600 p-3 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h18M3 12h18M3 19h18"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-gray-400">Email</p>
+                    <p class="font-bold">jhonflover54@gmail.com</p>
+                   
+                  </div>
+                </div>
+    
+                <div class="flex items-center space-x-4">
+                  <div class="bg-purple-600 p-3 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 2C7.03 2 2.95 6.03 3 11.02c.03 2.8 1.2 5.31 3.04 7.1C7.07 19.67 8.46 21 10 22h4c1.54-1 2.93-2.33 3.96-3.88C18.8 16.33 19.97 13.82 20 11.02 20.05 6.03 15.97 2 12 2z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-gray-400">Address</p>
+                    <p class="font-bold">Colombia, Jamundi-valle del cauca</p>
+                </form>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+          <!-- Información de contacto -->
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 John Quintero. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/_next/static/chunks/webpack-3a4bcb4ffb5672a1.js"></script>
+  <script src="/_next/static/chunks/main-app-f73cdb3bce740b12.js"></script>
+</body>
+</html>
