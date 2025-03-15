@@ -53,45 +53,5 @@
     scale: 0.7;
   }
 /* Estilos para la sección Experience */
-.experience {
-  padding: 80px 0; /* Espaciado interno */
-}
 
-.experience .container {
-  max-width: 1200px; /* Ancho máximo del contenedor */
-  margin: 0 auto; /* Centra el contenedor */
-  padding: 0 20px; /* Espaciado interno */
-}
-
-.experience h2 {
-  text-align: center; /* Centra el título */
-  margin-bottom: 40px; /* Espacio inferior */
-  font-size: 2.5rem; /* Tamaño de fuente */
-  color: #2c3e50; /* Color del texto */
-}
-
-/* Estilos para la línea de tiempo */
-.timeline {
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  flex-direction: column; /* Apila los elementos verticalmente */
-}
-
-/* Estilos para cada evento */
-.event {
-  text-align: center; /* Centra el texto */
-  margin-bottom: 20px; /* Espacio entre eventos */
-}
-
-.event h3 {
-  font-size: 1.5rem; /* Tamaño de fuente */
-  color: #2c3e50; /* Color del texto */
-}
-
-.event p {
-  font-size: 1rem; /* Tamaño de fuente */
-  color: #666; /* Color del texto */
-}
-  
   
